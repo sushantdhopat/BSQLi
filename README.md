@@ -1,9 +1,11 @@
 BEST SQLI METHODLOGY BY ME:
 
 for single url:
+
 python3 lostsec.py -u "http://testphp.vulnweb.com/artists.php?artist="  -p payloads/xor.txt -t 5
 
 for multiple urls:
+
 paramspider -d testphp.vulnweb.com -o urls.txt
 cat output/urls.txt | sed 's/FUZZ//g' >final.txt
 python3 lostsec.py -l final.txt -p payloads/xor.txt -t 5
