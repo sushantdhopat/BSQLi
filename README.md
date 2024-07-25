@@ -1,6 +1,7 @@
 ![Screenshot (145)](https://github.com/user-attachments/assets/f24e4bd8-e9dd-4955-ac8a-9af0f55b4448)
 
 BEST SQLI METHODLOGY BY COFFIN:
+
 for single url:
 
 python3 lostsec.py -u "http://testphp.vulnweb.com/artists.php?artist="  -p payloads/xor.txt -t 5
