@@ -21,6 +21,7 @@ cat output.txt | sed 's/=.*/=/' >final.txt
 python3 lostsec.py -l final.txt -p payloads/xor.txt -t 5
 
 echo testphp.vulnweb.com | katana -d 5 -ps -pss waybackarchive,commoncrawl,alienvault -f qurl | urldedupe >output.txt
+![Screenshot (145)](https://github.com/user-attachments/assets/f24e4bd8-e9dd-4955-ac8a-9af0f55b4448)
 
 katana -u http://testphp.vulnweb.com -d 5 | grep '=' | urldedupe | anew output.txt
 
